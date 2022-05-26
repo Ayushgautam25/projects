@@ -1,0 +1,30 @@
+package com.practice.FlightManagement.FlightService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.practice.FlightManagement.controller.dto.FlightBookingForm;
+import com.practice.FlightManagement.entity.Flight;
+import com.practice.FlightManagement.entity.Passenger;
+import com.practice.FlightManagement.repo.FlightRepo;
+import com.practice.FlightManagement.repo.PassengerRepo;
+
+public class FlightManagementService {
+	
+	public FlightManagementService fservice;
+	
+	@Autowired
+	private FlightRepo flightRepo;
+	
+	@Autowired
+	private PassengerRepo passengerRepo;
+	
+	private String FlightBooking(FlightBookingForm fbf) {
+		Passenger passenger = new ObjectMapper().convertValue(fbf,Passenger.class);
+		Long passenger_id = passengerRepo.save(passenger).getPassenger_id();
+		System.out.println("Passenger Information Received Successfully");
+		Flight flight = new Flight(123456L, 10000, passenger_id);
+		Long f_no = flightRepo.save(flight).getFlightnumber();
+		return "Flight Confirmed! Flight Number : "+f_no;
+	}
+}

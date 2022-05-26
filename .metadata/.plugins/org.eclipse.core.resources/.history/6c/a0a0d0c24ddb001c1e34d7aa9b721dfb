@@ -1,0 +1,25 @@
+package com.example.Footballers.domain;
+
+import javax.persistence.*;
+
+@Entity
+public class Footballer {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int jersey_no;
+	@Column
+	private String Name;
+	@Column
+	private int Age;
+	@Column
+	private String Country;
+	public Footballer() {	}
+	public Footballer(int jersey_no, String name, int age, String country) {
+		super();
+		this.jersey_no = jersey_no;
+		Name = name;
+		Age = age;
+		Country = country;
+	}
+	
+}

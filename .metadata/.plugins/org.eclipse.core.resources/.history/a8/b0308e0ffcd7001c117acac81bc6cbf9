@@ -1,0 +1,37 @@
+package vehicle;
+
+public class VehicleProperties {
+	private String Engine;
+	private int Wheels;
+	public VehicleProperties() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public VehicleProperties(String engine, int wheels) {
+		super();
+		Engine = engine;
+		Wheels = wheels;
+	}
+	public String getEngine() {
+		return Engine;
+	}
+	public void setEngine(String engine) {
+		Engine = engine;
+	}
+	public int getWheels() {
+		return Wheels;
+	}
+	public void setWheels(int wheels) {
+		Wheels = wheels;
+	}
+	@Override
+	public String toString() {
+		return "VehicleProperties [Engine=" + Engine + ", Wheels=" + Wheels + "]";
+	}
+	public void inititit() {
+		System.out.println("Information of car :");
+	}
+	public void byebye() {
+		System.out.println("Bye Bye!");
+	}
+}

@@ -1,0 +1,13 @@
+package com.tutorial;
+
+import org.springframework.context.annotation.*;
+import org.springframework.context.ApplicationContext;
+
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(HelloWorldConfig.class);
+		HelloWorld helloworld = ctx.getBean(HelloWorld.class);
+		helloworld.setMessage("HelloWorld");
+		helloworld.getMessage();
+	}
+}

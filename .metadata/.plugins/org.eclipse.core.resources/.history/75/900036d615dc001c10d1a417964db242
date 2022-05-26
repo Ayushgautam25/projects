@@ -1,0 +1,34 @@
+package com.practice.FlightManagement.controller.dto;
+
+public class FlightBookingForm {
+	
+	private String passenger_name;
+	private int age;
+	private Long passenger_contactno;
+	public FlightBookingForm() {}
+	public FlightBookingForm(String passenger_name, int age, Long passenger_contactno) {
+		super();
+		this.passenger_name = passenger_name;
+		this.age = age;
+		this.passenger_contactno = passenger_contactno;
+	}
+	public String getPassenger_name() {
+		return passenger_name;
+	}
+	public void setPassenger_name(String passenger_name) {
+		this.passenger_name = passenger_name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public Long getPassenger_contactno() {
+		return passenger_contactno;
+	}
+	public void setPassenger_contactno(Long passenger_contactno) {
+		this.passenger_contactno = passenger_contactno;
+	}
+	
+}

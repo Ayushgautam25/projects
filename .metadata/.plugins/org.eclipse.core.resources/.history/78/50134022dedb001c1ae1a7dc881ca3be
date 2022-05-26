@@ -1,0 +1,9 @@
+package com.practice.Spotify.spotify_service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.practice.Spotify.domain.Spotify;
+
+public interface Spotify_service extends JpaRepository<Spotify, Integer>{
+
+}

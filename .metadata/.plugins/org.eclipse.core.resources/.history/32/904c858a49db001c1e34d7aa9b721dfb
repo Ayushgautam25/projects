@@ -1,0 +1,12 @@
+package com.example.Footballers.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RequestMapping("/employee/api")
+@RestController
+
+public class Footballers_Controller {
+	private FotballersService fservice;
+	
+}

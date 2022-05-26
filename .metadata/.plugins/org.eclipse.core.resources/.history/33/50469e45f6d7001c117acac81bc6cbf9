@@ -1,0 +1,15 @@
+package com.springpractice;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext add = new ClassPathXmlApplicationContext("config.xml");
+		Student a1 = (Student) add.getBean(s1);
+		Student a2 = (Student) add.getBean(s2);
+		Student a3 = (Student) add.getBean(s3);
+		Student a4 = (Student) add.getBean(s4);
+		Student a5 = (Student) add.getBean(s5);
+	}
+}

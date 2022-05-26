@@ -1,0 +1,11 @@
+package com.practice.FlightManagement.controller.dto;
+
+public class FlightBookingForm {
+	
+	private String passenger_name;
+	private int age;
+	private Long passenger_contactno;
+	private String source;
+	private String destination;
+	
+}

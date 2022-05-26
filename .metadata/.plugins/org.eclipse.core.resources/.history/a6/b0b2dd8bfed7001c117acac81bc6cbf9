@@ -1,0 +1,18 @@
+package vehicle;
+
+public class VehicleProperties {
+	private String Engine;
+	private int gear;
+	private Fuel f;
+	public VehicleProperties() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void inititit() {
+		System.out.println("Information of car :");
+	}
+	public void byebye() {
+		System.out.println("Bye Bye!");
+	}
+}

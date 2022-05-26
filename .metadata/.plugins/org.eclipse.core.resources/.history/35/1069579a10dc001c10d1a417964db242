@@ -1,0 +1,5 @@
+package com.practice.FlightManagement.entity;
+
+public class Traveller {
+
+}

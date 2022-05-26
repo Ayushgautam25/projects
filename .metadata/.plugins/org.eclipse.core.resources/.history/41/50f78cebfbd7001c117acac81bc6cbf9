@@ -1,0 +1,17 @@
+package vehicle;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Vehicle {
+	public static void main(String[] args) {
+		AbstractApplicationContext car1 = ClassPathXmlApplicationContext("beans.xml");
+		Vehicle Audi = (Vehicle) car1.getBean("Car");
+		System.out.println(Audi);
+	}
+
+	private static AbstractApplicationContext ClassPathXmlApplicationContext(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
